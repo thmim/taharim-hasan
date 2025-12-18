@@ -24,7 +24,7 @@ export default function RootLayout({ children }) {
       >
         <BackGround>
           {/* <h2 className="text-7xl absolut z-10 flex flex-col justify-center items-center text-white font-bold">Hello</h2> */}
-          <main className="relative pt-28 md:pt-32 z-10">
+          <main className="relative pt-16 md:pt-20 z-10">
            {children} 
           </main>
           
