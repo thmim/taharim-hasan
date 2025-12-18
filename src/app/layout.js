@@ -1,6 +1,6 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-
+import BackGround from "./components/particleBg/BackGround";
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -22,7 +22,14 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+        <BackGround>
+          {/* <h2 className="text-7xl absolut z-10 flex flex-col justify-center items-center text-white font-bold">Hello</h2> */}
+          <main className="relative pt-28 md:pt-32 z-10">
+           {children} 
+          </main>
+          
+        </BackGround>
+        
       </body>
     </html>
   );
