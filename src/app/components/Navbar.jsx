@@ -21,9 +21,11 @@ export default function Navbar() {
       <div className="flex bg-black/20 md:bg-white/5 items-center justify-between rounded-none md:rounded-full px-6 md:px-10 py-4 backdrop-blur-lg border-b md:border border-white/15 shadow-lg">
         
         {/* Logo */}
-        <Link href="#home" className="flex items-center gap-2 text-white font-semibold text-lg">
-          <span className="text-green-400">&lt;/&gt;</span>
-          devripon
+        <Link href="#home" className="flex gap-0.5 items-center text-2xl font-bold">
+          <span className="text-green-400">&lt;</span>
+          <h2 className="text-white">Taharim</h2>
+          <span className="text-green-400">/&gt;</span>
+         
         </Link>
 
         {/* Desktop Menu */}
