@@ -42,9 +42,11 @@ export default function Navbar() {
         </ul>
 
         {/* Desktop CTA */}
+        <Link href={"#contact"}>
         <button className="hidden md:block rounded-full bg-green-400 px-6 py-2 text-sm font-semibold text-black hover:bg-green-300 transition">
           Hire Me
         </button>
+        </Link>
 
         {/* Mobile Menu Button */}
         <button 
