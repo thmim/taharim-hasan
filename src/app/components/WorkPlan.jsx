@@ -28,7 +28,7 @@ const steps = [
 
 export default function WorkPlan() {
   return (
-    <section className="pt-24 relative overflow-hidden">
+    <section className="pt-20 relative overflow-hidden">
       <div className="max-w-6xl mx-auto px-6">
         
         {/* Section Heading */}
@@ -37,11 +37,11 @@ export default function WorkPlan() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-3xl md:text-5xl font-bold text-white mb-4 tracking-tight"
+            className="text-3xl md:text-4xl font-bold text-white mb-4 tracking-tight"
           >
-            My Strategic <span className="text-green-400">Approach</span>
+            My Strategic Approach
           </motion.h2>
-          <div className="h-1 w-20 bg-green-400 mx-auto rounded-full mb-6"></div>
+          <div className="h-1 w-20 bg-lime-300 mx-auto rounded-full mb-6"></div>
           <p className="text-gray-400 max-w-2xl mx-auto text-lg leading-relaxed">
             I believe that a structured workflow is the foundation of every successful digital product.
           </p>
@@ -56,7 +56,7 @@ export default function WorkPlan() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.15, duration: 0.6 }}
-              className="relative p-8 rounded-3xl border border-white/10 bg-white/3 backdrop-blur-md hover:border-green-400/40 transition-all duration-300 group overflow-hidden"
+              className="relative p-8 rounded-3xl border border-white/10 bg-white/3 backdrop-blur-md hover:border-lime-400/40 transition-all duration-300 group overflow-hidden"
             >
               {/* Background Step Number Overlay */}
               {/* <div className="absolute -top-2 -right-2 text-8xl font-black text-white/3 group-hover:text-green-400/5 transition-colors pointer-events-none">
@@ -71,7 +71,7 @@ export default function WorkPlan() {
 
               {/* Text Content */}
               <div className="relative z-10">
-                <h3 className="text-xl font-bold text-white mb-3 group-hover:text-green-400 transition-colors">
+                <h3 className="text-xl font-bold text-white mb-3 group-hover:text-lime-300 transition-colors">
                   {step.title}
                 </h3>
                 <p className="text-gray-400 text-sm leading-relaxed font-light">

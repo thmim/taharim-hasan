@@ -113,7 +113,7 @@ function Orbit({ skills, radius, duration, reverse = false, sizeMultiplier = 1 }
   );
 }
 
-/* ===== MAIN SECTION ===== */
+/*  main section */
 export default function SkillsOrbit() {
   return (
     <section
@@ -128,9 +128,10 @@ export default function SkillsOrbit() {
         viewport={{ once: true }}
         className="text-center mb-9 md:mb-20 max-w-3xl mx-auto"
       >
-        <h2 className="text-3xl md:text-4xl font-bold mb-4 md:mb-6 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
+        <h2 className="text-3xl md:text-4xl font-bold mb-4 md:mb-6 bg-clip-text text-white">
           Skills & Expertise
         </h2>
+        <div className="h-1 w-20 bg-lime-300 mx-auto rounded-full mb-6"></div>
         <p className="text-gray-300 mb-4 text-base md:text-lg leading-relaxed px-4">
           I specialize in building modern, responsive web applications using cutting-edge technologies.
         </p>

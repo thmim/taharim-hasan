@@ -5,6 +5,7 @@ import Footer from "./components/Footer";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import ProjectShow from "./components/ProjectShow";
+import Services from "./components/Services";
 import Skills from "./components/Skills";
 import WorkPlan from "./components/WorkPlan";
 
@@ -20,6 +21,7 @@ export default function Home() {
         <Skills/>
         <Education/>
         <ProjectShow/>
+        <Services/>
         <Contact/>
         <Footer/>
     </div>

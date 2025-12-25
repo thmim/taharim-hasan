@@ -10,6 +10,7 @@ export const projects = [
       "Course enrollment system",
       "Video-based lessons",
       "Progress tracking dashboard",
+      "Secure Payment gateway with Stripe",
       "Admin course management",
     ],
     techStack: [
@@ -30,7 +31,10 @@ export const projects = [
       "Real-time availability check",
       "Room filtering & search",
       "Secure booking flow",
+      "Secure Payment gateway with Stripe",
       "JWT-based authentication",
+      "Booking Date update functionality",
+      "Booking Cancellation facilities"
     ],
     techStack: [
       "React.js", "Node.js", "Express.js", "JavaScript", "MongoDB", "Firebase", "Tailwind"
@@ -46,10 +50,10 @@ export const projects = [
     description:
       "A productivity-focused task management system for freelancers. Where users can post there task and freelancers can bids for task and earn.",
     features: [
-      "Real-time availability check",
-      "Room filtering & search",
-      "Secure booking flow",
-      "JWT-based authentication",
+      "Add task functionality",
+      "Task bidding functionality",
+      "Showing total bids functionality",
+      "Task update and delete facilities",
     ],
     techStack: [
       "React.js", "Node.js", "Express.js", "JavaScript", "MongoDB", "Firebase", "Tailwind"

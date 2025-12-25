@@ -28,7 +28,7 @@ export default function ProjectDetails() {
         {/* Back Button - Top */}
         <Link
           href="/#projects"
-          className="inline-flex items-center gap-2 text-gray-400 hover:text-green-400 transition-colors mb-12 group text-lg"
+          className="inline-flex items-center gap-2 text-gray-400 hover:text-lime-300 transition-colors mb-12 group text-lg"
         >
           <ChevronLeft size={24} className="group-hover:-translate-x-1 transition-transform" />
           Back to Projects
@@ -67,7 +67,7 @@ export default function ProjectDetails() {
           transition={{ delay: 0.3 }}
           className="flex items-center gap-3 text-gray-400 mb-10"
         >
-          <Calendar size={22} className="text-green-400" />
+          <Calendar size={22} className="text-lime-300" />
           <span className="font-medium text-lg">Timeline:</span>
           <span className="text-lg">{project.timeline}</span>
         </motion.div>
@@ -83,7 +83,7 @@ export default function ProjectDetails() {
             href={project.liveLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-3 px-8 py-4 rounded-full bg-green-400 text-black font-bold hover:bg-green-300 transition text-lg"
+            className="flex items-center gap-3 px-8 py-4 rounded-full bg-lime-300 text-black font-bold hover:border-green-300 transition text-lg"
           >
             Live Site <ExternalLink size={20} />
           </a>
@@ -121,7 +121,7 @@ export default function ProjectDetails() {
               <ul className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                 {project.features.map((feature, i) => (
                   <li key={i} className="flex items-start gap-4 text-gray-300">
-                    <CheckCircle2 size={24} className="text-green-400 shrink-0 mt-0.5" />
+                    <CheckCircle2 size={24} className="text-lime-300 shrink-0 mt-0.5" />
                     <span className="text-lg">{feature}</span>
                   </li>
                 ))}
@@ -154,15 +154,15 @@ export default function ProjectDetails() {
               initial={{ opacity: 0, x: 30 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
-              className="p-8 rounded-3xl bg-gradient-to-br from-green-400/10 to-transparent border border-green-400/30 backdrop-blur-md"
+              className="p-8 rounded-3xl bg-linear-to-br from-green-400/10 to-transparent border border-green-400/30 backdrop-blur-md"
             >
               <h3 className="text-2xl font-bold text-white mb-4">Interested in this project?</h3>
               <p className="text-gray-400 mb-8">
-                Let's discuss how I can build something similar for you.
+                Let’s discuss how I can build something similar for you.
               </p>
               <Link
                 href="/#contact"
-                className="w-full py-5 rounded-2xl bg-green-400 text-black font-bold flex items-center justify-center gap-3 hover:bg-green-300 transition text-lg"
+                className="w-full py-5 rounded-2xl bg-lime-300 text-black font-bold flex items-center justify-center gap-3 hover:bg-green-300 transition text-lg"
               >
                 Get In Touch <Send size={20} />
               </Link>

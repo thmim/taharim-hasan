@@ -6,39 +6,12 @@ import { ArrowUpRight } from "lucide-react";
 import Link from "next/link";
 import { projects } from "../projectsData";
 
-// const projects = [
-//   {
-//     slug: "edugenix",
-//     title: "EduGenix – E-Learning Platform",
-//     description:
-//       "A full-featured online learning platform where teacher can published courses and student can purchase course with authentication.",
-//     tech: ["React.js", "Node.js", "Express.js", "JavaScript", "MongoDB", "Firebase", "JWT", "Tailwind"],
-//     image: "/edugenix.png",
-//   },
-//   {
-//     slug: "hotella",
-//     title: "Hotella – Hotel Booking System",
-//     description:
-//       "Real-time hotel booking experience with filters, availability checking, secure reservations, cancellation and update booking features.",
-//     tech: ["React.js", "Node.js", "Express.js", "JavaScript", "MongoDB", "Firebase", "Tailwind"],
-//     image: "/hotel-booking.png",
-//   },
-//   {
-//     slug: "freelance",
-//     title: "MoneyMachine – Task Manager",
-//     description:
-//       "A productivity-focused task management system for freelancers. Where users can post there task and freelancers can bids for task and earn.",
-//     tech: ["React.js", "Node.js", "Express.js", "JavaScript", "MongoDB", "Firebase", "Tailwind"],
-//     image: "/freelance-marketplace.png",
-//   },
-// ];
-
 export default function ProjectShow() {
   
   return (
     <section
       id="projects"
-      className="relative py-24 overflow-hidden"
+      className="relative pt-20 overflow-hidden"
     >
       {/* Background Glow */}
       <div className="absolute -top-40 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-green-400/10 blur-[160px] rounded-full" />
@@ -50,10 +23,11 @@ export default function ProjectShow() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-4xl md:text-6xl font-bold text-white"
+            className="text-3xl md:text-4xl mb-2 font-bold text-white"
           >
-            Selected <span className="text-green-400">Projects</span>
+            Featured Projects
           </motion.h2>
+          <div className="h-1 w-20 bg-lime-300 mx-auto rounded-full mb-6"></div>
           <p className="text-gray-400 mt-4 max-w-xl mx-auto">
             A collection of real-world projects focused on performance,
             scalability, and clean user experience.
@@ -103,7 +77,7 @@ export default function ProjectShow() {
                     <span
                       key={i}
                       className="px-3 py-1 text-xs rounded-full border border-white/15 text-gray-300
-                 group-hover:border-green-400/40 group-hover:text-green-400 transition"
+                 group-hover:border-lime-400/40 group-hover:text-lime-300 transition"
                     >
                       {tech}
                     </span>
@@ -130,7 +104,7 @@ export default function ProjectShow() {
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                   className="w-full flex items-center justify-center gap-2 rounded-xl py-3 
-                             bg-green-400/90 text-black font-medium hover:bg-green-400 transition"
+                             bg-lime-300 text-black font-medium hover:bg-lime-300 transition"
                 >
                   View Project
                   <ArrowUpRight size={18} />

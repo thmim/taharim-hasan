@@ -1,6 +1,7 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import BackGround from "./components/particleBg/BackGround";
+import InitialLoader from "./components/InitialLoader";
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -21,12 +22,13 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased bg-[#050505]`}>
         
-        {/* ব্যাকগ্রাউন্ডকে আলাদা লেয়ার হিসেবে রাখুন */}
+        
+        <InitialLoader/>
+        {/* Background */}
         <div className="fixed inset-0 z-0">
            <BackGround />
         </div>
 
-        {/* কন্টেন্টকে এর উপরে রাখুন */}
         <main className="relative z-10 pt-6 md:pt-10">
            {children} 
         </main>
