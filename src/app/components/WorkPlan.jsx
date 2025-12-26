@@ -58,10 +58,6 @@ export default function WorkPlan() {
               transition={{ delay: index * 0.15, duration: 0.6 }}
               className="relative p-8 rounded-3xl border border-white/10 bg-white/3 backdrop-blur-md hover:border-lime-400/40 transition-all duration-300 group overflow-hidden"
             >
-              {/* Background Step Number Overlay */}
-              {/* <div className="absolute -top-2 -right-2 text-8xl font-black text-white/3 group-hover:text-green-400/5 transition-colors pointer-events-none">
-                0{index + 1}
-              </div> */}
 
               {/* Icon Container */}
               <div className="flex gap-3">
