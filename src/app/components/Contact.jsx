@@ -89,7 +89,9 @@ export default function Contact() {
                   { icon: <FaWhatsapp size={20}/>, link: "https://wa.me/8801969018549" },
                   
                 ].map((social, i) => (
-                  <a key={i} href={social.link} className="p-5 rounded-2xl bg-white/3 border border-white/10 text-white hover:bg-lime-300 hover:text-black hover:border-lime-300 transition-all">
+                  <a key={i} href={social.link}
+                  target="blank"
+                   className="p-5 rounded-2xl bg-white/3 border border-white/10 text-white hover:bg-lime-300 hover:text-black hover:border-lime-300 transition-all">
                     {social.icon}
                   </a>
                 ))}

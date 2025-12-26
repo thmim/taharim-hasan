@@ -25,7 +25,7 @@ export default function Hero() {
   });
 
   return (
-    <section className="relative py-5 mt-24 flex items-center justify-center overflow-hidden">
+    <section id="home" className="relative py-5 mt-24 flex items-center justify-center overflow-hidden">
 
       {/* Gradient Glow Background */}
       <div className="absolute inset-0 -z-10">

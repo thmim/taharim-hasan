@@ -15,10 +15,10 @@ export default function Footer() {
     <footer className="relative pt-20 pb-10 overflow-hidden border-t border-white/5">
       {/* Background Glow */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-px linear-to-r from-transparent via-green-400/50 to-transparent"></div>
-      
+
       <div className="max-w-6xl mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-16">
-          
+
           {/* logo Section */}
           <div className="space-y-6">
             <div className="flex items-center gap-2 group cursor-pointer">
@@ -40,8 +40,8 @@ export default function Footer() {
             <ul className="space-y-3">
               {["About", "Skills", "Projects", "Education", "Contact"].map((item) => (
                 <li key={item}>
-                  <a 
-                    href={`#${item.toLowerCase()}`} 
+                  <a
+                    href={`#${item.toLowerCase()}`}
                     className="text-gray-400 hover:text-lime-400 transition-colors text-sm flex items-center gap-2"
                   >
                     <span className="w-1 h-1 rounded-full bg-lime-400/40"></span>
@@ -56,18 +56,24 @@ export default function Footer() {
           <div className="space-y-6">
             <h4 className="text-white font-bold text-lg">Let’s Connect</h4>
             <div className="flex gap-4">
-              <a href="https://github.com/thmim" className="p-3 rounded-xl bg-white/3 border border-white/10 text-gray-400 hover:text-lime-300 hover:border-lime-400/30 transition-all">
+              <a href="https://github.com/thmim"
+                target="blank"
+                className="p-3 rounded-xl bg-white/3 border border-white/10 text-gray-400 hover:text-lime-300 hover:border-lime-400/30 transition-all">
                 <Github size={20} />
               </a>
-              <a href="https://www.linkedin.com/in/th-mim10/" className="p-3 rounded-xl bg-white/3 border border-white/10 text-gray-400 hover:text-lime-300 hover:border-lime-400/30 transition-all">
+              <a href="https://www.linkedin.com/in/th-mim10/"
+                target="blank"
+                className="p-3 rounded-xl bg-white/3 border border-white/10 text-gray-400 hover:text-lime-300 hover:border-lime-400/30 transition-all">
                 <Linkedin size={20} />
               </a>
-              <a href="https://wa.me/8801969018549" className="p-3 rounded-xl bg-white/3 border border-white/10 text-gray-400 hover:text-lime-300 hover:border-lime-400/30 transition-all">
-              <FaWhatsapp size={20} /> 
+              <a href="https://wa.me/8801969018549"
+                target="blank"
+                className="p-3 rounded-xl bg-white/3 border border-white/10 text-gray-400 hover:text-lime-300 hover:border-lime-400/30 transition-all">
+                <FaWhatsapp size={20} />
               </a>
             </div>
-            <a 
-              href="mailto:your-email@gmail.com" 
+            <a
+              href="mailto:your-email@gmail.com"
               className="inline-flex items-center gap-2 text-sm text-gray-400 hover:text-white transition-colors"
             >
               <Mail size={16} className="text-lime-300" />
@@ -81,7 +87,7 @@ export default function Footer() {
           <p className="text-gray-500 text-sm text-center md:text-left">
             © {currentYear} All Rights Reserved. Designed & Built by <span className="text-white font-medium italic">Taharim Hasan Mim</span>
           </p>
-          
+
           {/* Scroll to Top Button */}
           <motion.button
             whileHover={{ y: -5 }}
