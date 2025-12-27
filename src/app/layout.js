@@ -2,6 +2,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import BackGround from "./components/particleBg/BackGround";
 import InitialLoader from "./components/InitialLoader";
+import { Analytics } from "@vercel/analytics/next"
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -35,7 +36,7 @@ export default function RootLayout({ children }) {
         <main className="relative z-10 pt-6 md:pt-10">
            {children} 
         </main>
-        
+        <Analytics/>
       </body>
     </html>
   );
