@@ -332,7 +332,7 @@ export default function SkillsOrbit() {
         <h2 className="mb-3 bg-gradient-to-br from-white via-white to-purple-300 bg-clip-text text-3xl font-bold tracking-tight text-transparent md:text-5xl">
           Skills & Expertise
         </h2>
-        <div className="mx-auto mb-4 h-1 w-20 rounded-full bg-gradient-to-r from-purple-500 via-fuchsia-400 to-cyan-400" />
+        <div className="h-1.5 w-20 bg-lime-300 mx-auto rounded-full"></div>
         <p className="px-4 text-sm leading-relaxed text-gray-300 md:text-base max-w-2xl mx-auto">
           Crafting modern, performant, full-stack web applications with a toolkit
           built for scale, speed, and delightful user experience.
