@@ -32,7 +32,7 @@ const educationData = [
 
 export default function Education() {
   return (
-    <section id="education" className="pt-24 pb-4 relative">
+    <section id="education" className="pt-18 pb-4 relative">
       <div className="max-w-4xl mx-auto px-6">
         
         {/* Heading */}

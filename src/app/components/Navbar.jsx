@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Menu, X } from "lucide-react";
 import { useState, useEffect, useRef } from "react";
 
+
 const navItems = [
   { name: "Home", href: "#home" },
   { name: "About Me", href: "#about" },
@@ -16,6 +17,7 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [activeSection, setActiveSection] = useState("home");
   const observerRef = useRef(null);
+
 
   useEffect(() => {
     const sections = navItems
@@ -41,7 +43,7 @@ export default function Navbar() {
       observerRef.current.observe(section)
     );
 
-    return () => observerRef.current.disconnect();
+    return () => observerRef.current?.disconnect();
   }, []);
 
   const handleNavClick = (href) => {
@@ -76,21 +78,19 @@ export default function Navbar() {
             return (
               <li key={item.name} className="relative group">
                 <Link
-                  href={item.href}
+                  href={item.href}   // ✅ correct
                   onClick={() => handleNavClick(item.href)}
-                  className={`transition-all duration-300 ${
-                    isActive
+                  className={`transition-all duration-300 ${isActive
                       ? "text-lime-300 font-semibold"
                       : "hover:text-lime-300"
-                  }`}
+                    }`}
                 >
                   {item.name}
                 </Link>
 
                 <span
-                  className={`absolute -bottom-1 left-0 h-0.5 bg-lime-300 transition-all duration-300 ${
-                    isActive ? "w-full" : "w-0 group-hover:w-full"
-                  }`}
+                  className={`absolute -bottom-1 left-0 h-0.5 bg-lime-300 transition-all duration-300 ${isActive ? "w-full" : "w-0 group-hover:w-full"
+                    }`}
                 ></span>
 
                 {isActive && (
@@ -134,11 +134,10 @@ export default function Navbar() {
                   <Link
                     href={item.href}
                     onClick={() => handleNavClick(item.href)}
-                    className={`flex items-center justify-between text-lg font-medium py-3 px-4 rounded-xl transition-all ${
-                      isActive
+                    className={`flex items-center justify-between text-lg font-medium py-3 px-4 rounded-xl transition-all ${isActive
                         ? "bg-lime-500/20 text-lime-300 border border-lime-500/30"
                         : "text-gray-200 hover:text-lime-300 hover:bg-white/5"
-                    }`}
+                      }`}
                   >
                     <span>{item.name}</span>
                     {isActive && (
