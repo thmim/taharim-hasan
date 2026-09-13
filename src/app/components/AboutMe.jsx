@@ -119,8 +119,8 @@ export default function AboutMe() {
               
               <div className="space-y-4">
                 <p className="text-gray-300 leading-relaxed text-lg">
-                  I’m a passionate <span className="font-semibold text-lime-300">MERN Stack Developer</span> from Bangladesh, 
-                  specializing in building modern web applications with the MERN stack and Next.js. My journey began with 
+                  I’m a passionate <span className="font-semibold text-lime-300">Full Stack Developer</span> from Bangladesh, 
+                  specializing in building modern web applications with the Full stack technologies. My journey began with 
                   curiosity about how digital experiences come to life, evolving into a deep commitment to creating 
                   solutions that are both technically robust and visually compelling.
                 </p>

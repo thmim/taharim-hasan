@@ -6,15 +6,16 @@ import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 
 const skills =
-  ["React.js", "Next.js", "JavaScript", "Node.js", "Express.js", "MongoDB", "Vercel", "Netlify"];
+  ["Next.js", "JavaScript","TypeScript", "Node.js", "Express.js", "PostgreSQL", "PrismaORM"];
 
 export default function Hero() {
   const [text] = useTypewriter({
     words: [
-      "MERN Stack Developer",
-      "Frontend Developer",
-      "React & Next.js Developer",
       "Full Stack Developer",
+      "Software Engineer",
+      "MERN Stack Developer",
+      "React & Next.js Developer",
+      "Frontend Developer",
       "Backend Developer",
       "Problem Solver",
     ],
@@ -82,7 +83,8 @@ export default function Hero() {
 
         {/* Short Intro */}
         <p className="text-gray-400 text-xl md:text-2xl leading-relaxed mb-5">
-          I build modern,responsive, and high-performance web applications with <span className="text-lime-300">MERN Stack</span> experties.
+          
+          I build modern,dynamic,full-featured web applications, and high-performance web applications with <span className="text-lime-300">Full Stack</span> experties.
           
         </p>
         {/* Tech stack */}

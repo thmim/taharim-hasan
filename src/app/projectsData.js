@@ -1,24 +1,25 @@
 export const projects = [
   {
-    id: "edugenix",
-    title: "EduGenix – E-Learning Platform",
-    timeline: "Aug 2025 – Aug 2025",
+    id: "gearup",
+    title: "GearUp –  Sports & Outdoor Equipment Rental Platform  ",
+    timeline: "Aug 2026 – present",
     description:
-      "EduGenix is a full-featured e-learning platform that allows users to enroll in courses, watch video lessons, and track learning progress.",
+      "GearUp is a Full Stack project for sports and outdoor equipment rental platform. It allows customers to rent sports gear, providers to manage their equipment, and admins to oversee the entire platform.",
     features: [
-      "User authentication & authorization",
-      "Course enrollment system",
-      "Video-based lessons",
-      "Progress tracking dashboard",
-      "Secure Payment gateway with Stripe",
-      "Admin course management",
+      "Role based rental system",
+      "JWT authentication and separate permission-scoped workflows for each role",
+      " Integrated SSLCommerz for payment processing and automatic rental-status updates on successful payment.",
+      "Designed the full rental lifecycle from rent to return",
+      "Automatic update availablity after product returned",
+      "Admin manage whole thing",
     ],
     techStack: [
-      "React.js", "Node.js", "Express.js", "JavaScript", "MongoDB", "Firebase", "JWT", "Tailwind"
+       "TypeScript", "Next.js", "ShadCN", "Node.js", "Express.js", "PostgreSQL", "Prisma", "JWT","SSLComerz"
+
     ],
-    liveLink: "https://edugenix-e-learning-project.web.app/",
-    codeLink: "https://github.com/thmim/edugenix-project-client-repo",
-    image: "/edugenix.png",
+    liveLink: "https://sports-gear-rental-site.vercel.app/",
+    codeLink: "https://github.com/thmim/different-sports-gear-rental-site-client",
+    image: "/gearup-screenshot.png",
   },
 
   {
@@ -44,22 +45,24 @@ export const projects = [
     image: "/hotel-booking.png",
   },
   {
-    id: "freelance",
-    title: "MoneyMachine – Task Manager",
-    timeline: "June 2025 – June 2025",
+    id: "edugenix",
+    title: "EduGenix – E-Learning Platform",
+    timeline: "Aug 2025 – Aug 2025",
     description:
-      "A productivity-focused task management system for freelancers. Where users can post there task and freelancers can bids for task and earn.",
+      "EduGenix is a full-featured e-learning platform that allows users to enroll in courses, watch video lessons, and track learning progress.",
     features: [
-      "Add task functionality",
-      "Task bidding functionality",
-      "Showing total bids functionality",
-      "Task update and delete facilities",
+      "User authentication & authorization",
+      "Course enrollment system",
+      "Video-based lessons",
+      "Progress tracking dashboard",
+      "Secure Payment gateway with Stripe",
+      "Admin course management",
     ],
     techStack: [
-      "React.js", "Node.js", "Express.js", "JavaScript", "MongoDB", "Firebase", "Tailwind"
+      "React.js", "Node.js", "Express.js", "JavaScript", "MongoDB", "Firebase", "JWT", "Tailwind"
     ],
-    liveLink: "https://freelance-marketplace-auth.web.app/",
-    codeLink: "https://github.com/thmim/freelance-marketplace-client-repo",
-    image: "/freelance-marketplace.png",
+    liveLink: "https://edugenix-e-learning-project.web.app/",
+    codeLink: "https://github.com/thmim/edugenix-project-client-repo",
+    image: "/edugenix.png",
   },
 ];
