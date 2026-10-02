@@ -158,6 +158,7 @@ export default function AboutMe() {
               href="https://drive.google.com/file/d/1dcQvo15qD0NpJR0eJEj71kIV5644XSua/view?usp=sharing"
               target="blank"
               // download="Md_Taharim_Hasan_Resume.pdf"
+              // download="Md_Taharim_Hasan_Resume.pdf"
               className="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-linear-to-r from-green-400 to-lime-500 text-black font-bold shadow-lg hover:shadow-green-400/25 transition"
             >
               Download Resume <Download size={20} />
