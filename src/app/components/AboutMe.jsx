@@ -79,7 +79,7 @@ export default function AboutMe() {
               <div className="relative rounded-2xl overflow-hidden border-2 border-white/20 bg-linear-to-br from-gray-900 to-black backdrop-blur-sm">
                 <div className="absolute inset-0 bg-linear-to-t from-black/50 via-transparent to-transparent z-10"></div>
                 <Image 
-                  src="/myportfolioimg.jpg" 
+                  src="/personal-image-headshot(ai).png" 
                   alt="Md Taharim Hasan Mim - Full Stack Developer"
                   width={500}
                   height={500}
@@ -155,7 +155,7 @@ export default function AboutMe() {
             <motion.a
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              href="https://drive.google.com/file/d/18GQwiYpKGa0FE_T2mbRKO_1AWSwQW3_T/view?usp=drive_link"
+              href="https://drive.google.com/file/d/1dcQvo15qD0NpJR0eJEj71kIV5644XSua/view?usp=sharing"
               target="blank"
               // download="Md_Taharim_Hasan_Resume.pdf"
               className="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-linear-to-r from-green-400 to-lime-500 text-black font-bold shadow-lg hover:shadow-green-400/25 transition"

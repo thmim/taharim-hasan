@@ -1,3 +1,5 @@
+
+
 "use client";
 
 import { motion } from "framer-motion";
@@ -7,12 +9,8 @@ import Link from "next/link";
 import { projects } from "../projectsData";
 
 export default function ProjectShow() {
-  
   return (
-    <section
-      id="projects"
-      className="relative pt-20 overflow-hidden"
-    >
+    <section id="projects" className="relative pt-20 overflow-hidden">
       {/* Background Glow */}
       <div className="absolute -top-40 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-green-400/10 blur-[160px] rounded-full" />
 
@@ -27,7 +25,9 @@ export default function ProjectShow() {
           >
             Featured Projects
           </motion.h2>
+
           <div className="h-1 w-20 bg-lime-300 mx-auto rounded-full mb-6"></div>
+
           <p className="text-gray-400 mt-4 max-w-xl mx-auto">
             A collection of real-world projects focused on performance,
             scalability, and clean user experience.
@@ -38,25 +38,25 @@ export default function ProjectShow() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
           {projects.map((project, index) => (
             <motion.div
-              key={index}
+              key={project.id || index}
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.15 }}
               whileHover={{ y: -12 }}
-              className="group relative rounded-3xl border border-white/10 bg-white/5 backdrop-blur-xl overflow-hidden"
+              className="group relative h-full rounded-3xl border border-white/10 bg-white/5 backdrop-blur-xl overflow-hidden flex flex-col"
             >
               {/* Glow Border on Hover */}
               <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition duration-500 pointer-events-none">
-                <div className="absolute inset-0 bg-linear-to-r from-green-400/20 to-transparent blur-xl" />
+                <div className="absolute inset-0 bg-gradient-to-r from-green-400/20 to-transparent blur-xl" />
               </div>
 
               {/* Image */}
-              <div className="relative h-56 overflow-hidden">
+              <div className="relative h-56 shrink-0 overflow-hidden">
                 <motion.div
                   whileHover={{ scale: 1.12 }}
                   transition={{ duration: 0.6, ease: "easeOut" }}
-                  className="h-full w-full"
+                  className="h-full w-full relative"
                 >
                   <Image
                     src={project.image}
@@ -69,15 +69,13 @@ export default function ProjectShow() {
               </div>
 
               {/* Content */}
-              <div className="p-7 relative z-10">
-                
+              <div className="p-7 relative z-10 flex flex-col flex-1">
                 {/* Tech Stack */}
-                <div className="flex flex-wrap gap-2 mb-5">
+                <div className="flex flex-wrap gap-2 mb-5 min-h-[30px]">
                   {project.techStack.slice(0, 4).map((tech, i) => (
                     <span
                       key={i}
-                      className="px-3 py-1 text-xs rounded-full border border-white/15 text-gray-300
-                 group-hover:border-lime-400/40 group-hover:text-lime-300 transition"
+                      className="px-3 py-1 text-xs rounded-full border border-white/15 text-gray-300 group-hover:border-lime-400/40 group-hover:text-lime-300 transition"
                     >
                       {tech}
                     </span>
@@ -90,26 +88,29 @@ export default function ProjectShow() {
                   )}
                 </div>
 
-                <h3 className="text-xl font-semibold text-white mb-3">
+                {/* Title */}
+                <h3 className="text-xl font-semibold text-white mb-3 min-h-[28px]">
                   {project.title}
                 </h3>
 
-                <p className="text-gray-400 text-sm leading-relaxed mb-6">
+                {/* Description */}
+                <p className="text-gray-400 text-sm leading-relaxed mb-6 line-clamp-3">
                   {project.description}
                 </p>
 
                 {/* CTA */}
-                <Link href={`/projects/${project.id}`}>
-                <motion.button
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                  className="w-full flex items-center justify-center gap-2 rounded-xl py-3 
-                             bg-lime-300 text-black font-medium hover:bg-lime-300 transition"
-                >
-                  View Project
-                  <ArrowUpRight size={18} />
-                </motion.button>
-                </Link>
+                <div className="mt-auto pt-2">
+                  <Link href={`/projects/${project.id}`} className="block">
+                    <motion.button
+                      whileHover={{ scale: 1.05 }}
+                      whileTap={{ scale: 0.95 }}
+                      className="w-full flex items-center justify-center gap-2 rounded-xl py-3 bg-lime-300 text-black font-medium hover:bg-lime-400 transition cursor-pointer"
+                    >
+                      View Project
+                      <ArrowUpRight size={18} />
+                    </motion.button>
+                  </Link>
+                </div>
               </div>
             </motion.div>
           ))}

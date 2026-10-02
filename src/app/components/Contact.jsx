@@ -70,7 +70,7 @@ export default function Contact() {
             <div className="flex justify-center items-center gap-6">
             <div className="pt-8">
               <Link 
-                href={"https://drive.google.com/file/d/18GQwiYpKGa0FE_T2mbRKO_1AWSwQW3_T/view?usp=drive_link"}
+                href={"https://drive.google.com/file/d/1dcQvo15qD0NpJR0eJEj71kIV5644XSua/view?usp=sharing"}
                 target="blank"
                 className="flex items-center justify-between p-3 rounded-2xl bg-linear-to-r from-green-400 to-lime-600 text-black font-bold hover:shadow-[0_10px_30px_rgba(74,222,128,0.3)] transition-all active:scale-[0.98]"
               >

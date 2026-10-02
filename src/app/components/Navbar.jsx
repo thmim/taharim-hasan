@@ -103,7 +103,7 @@ export default function Navbar() {
 
         {/* Desktop CTA */}
         <Link
-          href="https://drive.google.com/file/d/18GQwiYpKGa0FE_T2mbRKO_1AWSwQW3_T/view?usp=sharing"
+          href="https://drive.google.com/file/d/1dcQvo15qD0NpJR0eJEj71kIV5644XSua/view?usp=sharing"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -151,7 +151,7 @@ export default function Navbar() {
             {/* Mobile Resume Button */}
             <li className="mt-4">
               <Link
-                href="https://drive.google.com/file/d/18GQwiYpKGa0FE_T2mbRKO_1AWSwQW3_T/view?usp=sharing"
+                href="https://drive.google.com/file/d/1dcQvo15qD0NpJR0eJEj71kIV5644XSua/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="block"

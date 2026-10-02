@@ -61,7 +61,7 @@ export const projects = [
     techStack: [
       "React.js", "Node.js", "Express.js", "JavaScript", "MongoDB", "Firebase", "JWT", "Tailwind"
     ],
-    liveLink: "https://edugenix-e-learning-project.web.app/",
+    liveLink: "https://eduginix-classroom-6ae6a.web.app/",
     codeLink: "https://github.com/thmim/edugenix-project-client-repo",
     image: "/edugenix.png",
   },
